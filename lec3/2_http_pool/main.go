@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"./server"
+	"github.com/jirfag/gointensive/lec3/2_http_pool/server"
 )
 
 func main() {

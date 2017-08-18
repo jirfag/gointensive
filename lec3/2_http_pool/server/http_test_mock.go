@@ -4,8 +4,8 @@
 package server
 
 import (
-	workers "../workers"
 	gomock "github.com/golang/mock/gomock"
+	workers "github.com/jirfag/gointensive/lec3/2_http_pool/workers"
 	reflect "reflect"
 	time "time"
 )

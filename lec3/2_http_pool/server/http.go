@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"time"
 
-	"../workers"
+	"github.com/jirfag/gointensive/lec3/2_http_pool/workers"
 )
 
 type IPool interface {
