@@ -1,0 +1,91 @@
+# Group Emails
+Welcome to the emails API. This API provides access to the emails service.
+
+## emails [/emails]
+
+### Create email [POST]
+
+Create a new email
+
++ Request email (application/json; charset=utf-8)
+    + Headers
+
+            Accept: application/vnd.jirfag+json
+    + Attributes
+
+        + user_id: 1 (number)
+        + address: ADDRESS (string)
+        + user form: (user)
+
++ Response 201 (application/json; charset=utf-8)
+    + Attributes (email, fixed)
+
+### Get emails [GET]
+
+Returns an email list.
+
++ Request (application/json; charset=utf-8)
+    + Headers
+
+            Accept: application/vnd.jirfag+json
+
++ Response 200 (application/json; charset=utf-8)
+    + Attributes (array, fixed)
+        + (email)
+
+## email details [/emails/{id}]
+
++ Parameters
+    + id: `1` (enum[string]) - The ID of the desired email.
+        + Members
+            + `1`
+            + `2`
+            + `3`
+
+### Get email [GET]
+
+Returns an email.
+
++ Request (application/json; charset=utf-8)
+    + Headers
+
+            Accept: application/vnd.jirfag+json
+
++ Response 200 (application/json; charset=utf-8)
+    + Attributes (email, fixed)
+
+### Update email [PUT]
+
+Update an email.
+
++ Request email (application/json; charset=utf-8)
+    + Headers
+
+            Accept: application/vnd.jirfag+json
+    + Attributes
+
+        + user_id: 1 (number)
+        + address: ADDRESS (string)
+        + user form: (user)
+
++ Response 200 (application/json; charset=utf-8)
+    + Attributes (email, fixed)
+
+### Delete email [DELETE]
+
+Delete an email.
+
++ Request (application/json; charset=utf-8)
+    + Headers
+
+            Accept: application/vnd.jirfag+json
+
++ Response 204
+
+# Data Structures
+## email (object)
+
++ id: *1* (number)
++ user_id: *1* (number)
++ address: *ADDRESS* (string)
++ user form: (user)
